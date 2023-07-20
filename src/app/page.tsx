@@ -1,7 +1,7 @@
 import Calculadora from '../app/Componentes/Calculadora.js';
 import Image from 'next/image.js';
-import web from '../app/img/webico.png';
-import repo from '../app/img/github.png';
+import web from './img/webico.png';
+import repo from './img/github.png';
 
 export default function Home() {
   return (
@@ -13,8 +13,8 @@ export default function Home() {
           </a>
         </div>
         <div className='repo'>
-          <a href='' target='_blank' rel="noopener noreferrer">
-            <Image className='img-info' src={repo} alt='GitHub' width={50}></Image>
+          <a href='https://github.com/Calelyo/calculadora' target='_blank' rel="noopener noreferrer">
+            <Image className='img-info' src={repo} alt='GitHub' loading='lazy' width={50}></Image>
           </a>
         </div>
       </div>

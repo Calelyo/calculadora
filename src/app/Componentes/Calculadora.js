@@ -12,7 +12,7 @@ export default function Calculadora(){
     const[numeroDos, setNumeroDos] = useState(numeros[10]);
     const[resultado, setResultado] = useState(`${numeroUno} ${signoActual} ${numeroDos}`);
 
-    const [resultadoListo, setResultadoListo] = useState(false);
+    // const [resultadoListo, setResultadoListo] = useState(false);
     const [actualNumUno, setActualNumUno] = useState(true);
     const [signoPuesto, setSignoPuesto] = useState(false);
 
@@ -91,7 +91,7 @@ export default function Calculadora(){
             setSignoActual(signos[0]);
             setActualNumUno(true);
             setSignoPuesto(false);
-            setResultadoListo(false);
+            // setResultadoListo(false);
             setResultado(numeros[0])
         }
     }
@@ -117,7 +117,7 @@ export default function Calculadora(){
             setSignoActual(signos[0]);
             setActualNumUno(true);
             setSignoPuesto(false);
-            setResultadoListo(true);
+            // setResultadoListo(true);
         }
 
         // MAS MENOS
@@ -137,9 +137,9 @@ export default function Calculadora(){
                 setResultado(nuevo);
             }
         }
-        if(signoActual === '+'){
-            setResultado('5')
-        }
+        // if(signoActual === '+'){
+        //     setResultado('5')
+        // }
     }
 
     return(
